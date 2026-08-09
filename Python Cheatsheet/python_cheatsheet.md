@@ -49,19 +49,19 @@ For most beginner and application-level Python code, focus primarily on
 
 ## 1.2 List/Array Methods Cheat Sheet
 
-  Method        Purpose                       Example
-  ------------- ----------------------------- ----------------------
-  `append()`    Add one item at the end       `a.append(10)`
-  `extend()`    Add multiple items            `a.extend([20, 30])`
-  `insert()`    Insert at an index            `a.insert(1, 20)`
-  `remove()`    Remove first matching value   `a.remove(20)`
-  `pop()`       Remove and return an item     `a.pop()`
-  `clear()`     Remove all items              `a.clear()`
-  `index()`     Find index of a value         `a.index(20)`
-  `count()`     Count occurrences             `a.count(20)`
-  `sort()`      Sort the list in place        `a.sort()`
-  `reverse()`   Reverse in place              `a.reverse()`
-  `copy()`      Create a shallow copy         `b = a.copy()`
+| Method | Purpose | Example |
+|---|---|---|
+| `append()` | Add one item at the end | `a.append(10)` |
+| `extend()` | Add multiple items | `a.extend([20, 30])` |
+| `insert()` | Insert at an index | `a.insert(1, 20)` |
+| `remove()` | Remove first matching value | `a.remove(20)` |
+| `pop()` | Remove and return an item | `a.pop()` |
+| `clear()` | Remove all items | `a.clear()` |
+| `index()` | Find index of a value | `a.index(20)` |
+| `count()` | Count occurrences | `a.count(20)` |
+| `sort()` | Sort the list in place | `a.sort()` |
+| `reverse()` | Reverse the list in place | `a.reverse()` |
+| `copy()` | Create a shallow copy | `b = a.copy()` |
 
 ## 1.3 Important Examples
 
@@ -126,28 +126,28 @@ string rather than modifying the original string.
 
 ## 2.2 Common String Methods
 
-  Method           Purpose
-  ---------------- ------------------------------------
-  `lower()`        Convert to lowercase
-  `upper()`        Convert to uppercase
-  `capitalize()`   Capitalize first character
-  `title()`        Capitalize each word
-  `swapcase()`     Swap upper/lower case
-  `strip()`        Remove leading/trailing whitespace
-  `lstrip()`       Remove leading whitespace
-  `rstrip()`       Remove trailing whitespace
-  `replace()`      Replace text
-  `split()`        Convert string into list
-  `join()`         Join iterable into string
-  `find()`         Find substring position
-  `index()`        Find substring position
-  `count()`        Count occurrences
-  `startswith()`   Check beginning
-  `endswith()`     Check ending
-  `isdigit()`      Check digits
-  `isalpha()`      Check letters
-  `isalnum()`      Check letters/numbers
-  `isspace()`      Check whitespace
+| Method | Purpose |
+|---|---|
+| `lower()` | Convert to lowercase |
+| `upper()` | Convert to uppercase |
+| `capitalize()` | Capitalize first character |
+| `title()` | Capitalize each word |
+| `swapcase()` | Swap upper/lower case |
+| `strip()` | Remove leading/trailing whitespace |
+| `lstrip()` | Remove leading whitespace |
+| `rstrip()` | Remove trailing whitespace |
+| `replace()` | Replace text |
+| `split()` | Convert string into a list |
+| `join()` | Join iterable into a string |
+| `find()` | Find substring position |
+| `index()` | Find substring position |
+| `count()` | Count occurrences |
+| `startswith()` | Check beginning |
+| `endswith()` | Check ending |
+| `isdigit()` | Check digits |
+| `isalpha()` | Check letters |
+| `isalnum()` | Check letters/numbers |
+| `isspace()` | Check whitespace |
 
 ## 2.3 Examples
 
