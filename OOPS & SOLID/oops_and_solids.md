@@ -1,4 +1,4 @@
-# 🧠 OOPs & SOLID in Python — Cheatsheet
+# OOPs & SOLID in Python — Cheatsheet
 
 > A practical revision guide with concise explanations and Python code samples.
 
@@ -934,7 +934,7 @@ This makes the system easier to:
 
 ---
 
-# 🧠 SOLID Mental Model
+# SOLID Mental Model
 
 ```text
                          SOLID
