@@ -1,114 +1,114 @@
-**# Python Cheatsheet**
+****# Python Cheatsheet****
 
-**## Technical Reference: Arrays, Strings, OOP, Decorators, Virtual Environments, pip, and PEP 8**
+****## Technical Reference: Arrays, Strings, OOP, Decorators, Virtual Environments, pip, and PEP 8****
 
-\> A practical Python reference for learning, revision, coding practice,
+> A practical Python reference for learning, revision, coding practice,
 
-\> and interviews.
+> and interviews.
 
-**------------------------------------------------------------------------**
+****------------------------------------------------------------------------****
 
-**# Table of Contents**
+****# Table of Contents****
 
-1\.  [Array Methods]\(#1-array-methods)
+1\\.  [Array Methods](#1-array-methods)
 
-2\.  [String Methods]\(#2-string-methods)
+2\\.  [String Methods](#2-string-methods)
 
-3\.  [Objects and Object-Oriented
+3\\.  [Objects and Object-Oriented
 
-    Programming]\(#3-objects-and-object-oriented-programming)
+    Programming](#3-objects-and-object-oriented-programming)
 
-4\.  [Decorators]\(#4-decorators)
+4\\.  [Decorators](#4-decorators)
 
-5\.  [virtualenv]\(#5-virtualenv)
+5\\.  [virtualenv](#5-virtualenv)
 
-6\.  [pip Package Manager]\(#6-pip-package-manager)
+6\\.  [pip Package Manager](#6-pip-package-manager)
 
-7\.  [PEP 8 Standards Summary]\(#7-pep-8-standards-summary)
+7\\.  [PEP 8 Standards Summary](#7-pep-8-standards-summary)
 
-8\.  [Quick Revision]\(#8-quick-revision)
+8\\.  [Quick Revision](#8-quick-revision)
 
-**------------------------------------------------------------------------**
+****------------------------------------------------------------------------****
 
-**# 1. Array Methods**
+****# 1. Array Methods****
 
-**## 1.1 What is an Array in Python?**
+****## 1.1 What is an Array in Python?****
 
-Python does not have a built-in \`array\` type that behaves exactly like
+Python does not have a built-in `array` type that behaves exactly like
 
 arrays in languages such as C or Java.
 
-In everyday Python programming, the **\*\*list\*\*** is commonly used as a
+In everyday Python programming, the ****list**** is commonly used as a
 
 general-purpose dynamic array.
 
-\`\`\` python
+```python
 
 numbers = [10, 20, 30, 40]
 
-\`\`\`
+```
 
-Python also provides the \`array\` module for storing values of a single
+Python also provides the `array` module for storing values of a single
 
 basic type efficiently.
 
-\`\`\` python
+```python
 
 from array import array
 
 numbers = array("i", [10, 20, 30])
 
-\`\`\`
+```
 
 For most beginner and application-level Python code, focus primarily on
 
-**\*\*list methods\*\***.
+****list methods****.
 
-**## 1.2 List/Array Methods Cheat Sheet**
+****## 1.2 List/Array Methods Cheat Sheet****
 
-\| Method | Purpose | Example |
+| Method | Purpose | Example |
 
-\|---|---|---|
+|---|---|---|
 
-\| \`append()\` | Add one item at the end | \`a.append(10)\` |
+| `append()` | Add one item at the end | `a.append(10)` |
 
-\| \`extend()\` | Add multiple items | \`a.extend([20, 30])\` |
+| `extend()` | Add multiple items | `a.extend([20, 30])` |
 
-\| \`insert()\` | Insert at an index | \`a.insert(1, 20)\` |
+| `insert()` | Insert at an index | `a.insert(1, 20)` |
 
-\| \`remove()\` | Remove first matching value | \`a.remove(20)\` |
+| `remove()` | Remove first matching value | `a.remove(20)` |
 
-\| \`pop()\` | Remove and return an item | \`a.pop()\` |
+| `pop()` | Remove and return an item | `a.pop()` |
 
-\| \`clear()\` | Remove all items | \`a.clear()\` |
+| `clear()` | Remove all items | `a.clear()` |
 
-\| \`index()\` | Find index of a value | \`a.index(20)\` |
+| `index()` | Find index of a value | `a.index(20)` |
 
-\| \`count()\` | Count occurrences | \`a.count(20)\` |
+| `count()` | Count occurrences | `a.count(20)` |
 
-\| \`sort()\` | Sort the list in place | \`a.sort()\` |
+| `sort()` | Sort the list in place | `a.sort()` |
 
-\| \`reverse()\` | Reverse the list in place | \`a.reverse()\` |
+| `reverse()` | Reverse the list in place | `a.reverse()` |
 
-\| \`copy()\` | Create a shallow copy | \`b = a.copy()\` |
+| `copy()` | Create a shallow copy | `b = a.copy()` |
 
-**## 1.3 Important Examples**
+****## 1.3 Important Examples****
 
-\`\`\` python
+```python
 
 numbers = [10, 20]
 
 numbers.append(30)
 
-\# [10, 20, 30]
+# [10, 20, 30]
 
 numbers.extend([40, 50])
 
-\# [10, 20, 30, 40, 50]
+# [10, 20, 30, 40, 50]
 
 numbers.insert(1, 15)
 
-\# [10, 15, 20, 30, 40, 50]
+# [10, 15, 20, 30, 40, 50]
 
 numbers.remove(15)
 
@@ -116,33 +116,33 @@ numbers.pop()
 
 numbers.clear()
 
-\`\`\`
+```
 
-**### \`append()\` vs \`extend()\`**
+****### `append()` vs `extend()`****
 
-\`\`\` python
+```python
 
 a = [1, 2]
 
 a.append([3, 4])
 
-\# [1, 2, [3, 4]]
+# [1, 2, [3, 4]]
 
-\`\`\`
+```
 
-\`\`\` python
+```python
 
 a = [1, 2]
 
 a.extend([3, 4])
 
-\# [1, 2, 3, 4]
+# [1, 2, 3, 4]
 
-\`\`\`
+```
 
-**### Useful List Operations**
+****### Useful List Operations****
 
-\`\`\` python
+```python
 
 len(numbers)       # Length
 
@@ -156,75 +156,75 @@ numbers[1:4]       # Slicing
 
 numbers[::-1]      # Reverse using slicing
 
-\`\`\`
+```
 
-**------------------------------------------------------------------------**
+****------------------------------------------------------------------------****
 
-**# 2. String Methods**
+****# 2. String Methods****
 
-**## 2.1 What is a String?**
+****## 2.1 What is a String?****
 
 A string is simply a group or sequence of characters, such as text or a word.
 
-\`\`\` python
+```python
 
 name = "Alok"
 
-\`\`\`
+```
 
-Strings are **\*\*immutable\*\***, so string methods generally return a new
+Strings are ****immutable****, so string methods generally return a new
 
 string rather than modifying the original string.
 
-**## 2.2 Common String Methods**
+****## 2.2 Common String Methods****
 
-\| Method | Purpose |
+| Method | Purpose |
 
-\|---|---|
+|---|---|
 
-\| \`lower()\` | Convert to lowercase |
+| `lower()` | Convert to lowercase |
 
-\| \`upper()\` | Convert to uppercase |
+| `upper()` | Convert to uppercase |
 
-\| \`capitalize()\` | Capitalize first character |
+| `capitalize()` | Capitalize first character |
 
-\| \`title()\` | Capitalize each word |
+| `title()` | Capitalize each word |
 
-\| \`swapcase()\` | Swap upper/lower case |
+| `swapcase()` | Swap upper/lower case |
 
-\| \`strip()\` | Remove leading/trailing whitespace |
+| `strip()` | Remove leading/trailing whitespace |
 
-\| \`lstrip()\` | Remove leading whitespace |
+| `lstrip()` | Remove leading whitespace |
 
-\| \`rstrip()\` | Remove trailing whitespace |
+| `rstrip()` | Remove trailing whitespace |
 
-\| \`replace()\` | Replace text |
+| `replace()` | Replace text |
 
-\| \`split()\` | Convert string into a list |
+| `split()` | Convert string into a list |
 
-\| \`join()\` | Join iterable into a string |
+| `join()` | Join iterable into a string |
 
-\| \`find()\` | Find substring position |
+| `find()` | Find substring position |
 
-\| \`index()\` | Find substring position |
+| `index()` | Find substring position |
 
-\| \`count()\` | Count occurrences |
+| `count()` | Count occurrences |
 
-\| \`startswith()\` | Check beginning |
+| `startswith()` | Check beginning |
 
-\| \`endswith()\` | Check ending |
+| `endswith()` | Check ending |
 
-\| \`isdigit()\` | Check digits |
+| `isdigit()` | Check digits |
 
-\| \`isalpha()\` | Check letters |
+| `isalpha()` | Check letters |
 
-\| \`isalnum()\` | Check letters/numbers |
+| `isalnum()` | Check letters/numbers |
 
-\| \`isspace()\` | Check whitespace |
+| `isspace()` | Check whitespace |
 
-**## 2.3 Examples**
+****## 2.3 Examples****
 
-\`\`\` python
+```python
 
 text = "hello world"
 
@@ -238,65 +238,65 @@ text.title()               # "Hello World"
 
 text.replace("world", "Python")
 
-\`\`\`
+```
 
-**### \`strip()\`**
+****### `strip()`****
 
-\`\`\` python
+```python
 
 text = "   hello   "
 
 text.strip()
 
-\# "hello"
+# "hello"
 
-\`\`\`
+```
 
-**### \`split()\`**
+****### `split()`****
 
-\`\`\` python
+```python
 
 text = "Python is easy"
 
 text.split()
 
-\# ['Python', 'is', 'easy']
+# ['Python', 'is', 'easy']
 
-\`\`\`
+```
 
-**### \`join()\`**
+****### `join()`****
 
-\`\`\` python
+```python
 
 words = ["Python", "is", "easy"]
 
 " ".join(words)
 
-\# "Python is easy"
+# "Python is easy"
 
-\`\`\`
+```
 
-**### \`find()\` vs \`index()\`**
+****### `find()` vs `index()`****
 
-\`\`\` python
+```python
 
 text = "Hello Python"
 
 text.find("Python")
 
-\# 6
+# 6
 
 text.find("Java")
 
-\# -1
+# -1
 
-\`\`\`
+```
 
-\`index()\` raises \`ValueError\` when the substring is not found.
+`index()` raises `ValueError` when the substring is not found.
 
-**### Validation**
+****### Validation****
 
-\`\`\` python
+```python
 
 "123".isdigit()        # True
 
@@ -306,11 +306,11 @@ text.find("Java")
 
 "   ".isspace()        # True
 
-\`\`\`
+```
 
-**### f-Strings**
+****### f-Strings****
 
-\`\`\` python
+```python
 
 name = "Alok"
 
@@ -318,19 +318,19 @@ age = 23
 
 message = f"My name is {name} and I am {age} years old."
 
-\`\`\`
+```
 
-**------------------------------------------------------------------------**
+****------------------------------------------------------------------------****
 
-**# 3. Objects and Object-Oriented Programming**
+****# 3. Objects and Object-Oriented Programming****
 
-**## 3.1 What is OOP?**
+****## 3.1 What is OOP?****
 
-**\*\*Object-Oriented Programming (OOP)\*\*** is a programming approach where
+****Object-Oriented Programming (OOP)**** is a programming approach where
 
 programs are designed around objects containing data and behavior.
 
-\`\`\` text
+```text
 
 Student
 
@@ -342,37 +342,37 @@ Student
 
 └── Behavior
 
-    ├── add\_marks()
+    ├── add_marks()
 
-    └── calculate\_average()
+    └── calculate_average()
 
-\`\`\`
+```
 
-**## 3.2 Class**
+****## 3.2 Class****
 
 A class is like a blueprint that we use to create objects.
 
-\`\`\` python
+```python
 
 class Student:
 
     pass
 
-\`\`\`
+```
 
-**## 3.3 Object**
+****## 3.3 Object****
 
 An object is a real instance created from a class.
 
-\`\`\` python
+```python
 
 student1 = Student()
 
 student2 = Student()
 
-\`\`\`
+```
 
-\`\`\` text
+```text
 
 Student  → Class
 
@@ -380,39 +380,39 @@ student1 → Object
 
 student2 → Object
 
-\`\`\`
+```
 
-**## 3.4 Constructor: \`\_\_init\_\_()\`**
+****## 3.4 Constructor: `__init__()`****
 
-\`\_\_init\_\_()\` initializes an object when it is created.
+`__init__()` initializes an object when it is created.
 
-\`\`\` python
+```python
 
 class Student:
 
-    def \_\_init\_\_(self, name, marks):
+    def __init__(self, name, marks):
 
         self.name = name
 
         self.marks = marks
 
-\`\`\`
+```
 
-\`\`\` python
+```python
 
 student = Student("Alok", 90)
 
-\`\`\`
+```
 
 Conceptually:
 
-\`\`\` text
+```text
 
 Student("Alok", 90)
 
         ↓
 
-\_\_init\_\_(self, "Alok", 90)
+__init__(self, "Alok", 90)
 
         ↓
 
@@ -420,55 +420,55 @@ self.name = "Alok"
 
 self.marks = 90
 
-\`\`\`
+```
 
-**## 3.5 \`self\`**
+****## 3.5 `self`****
 
-\`self\` refers to the current object.
+`self` refers to the current object.
 
-\`\`\` python
+```python
 
 class Student:
 
-    def \_\_init\_\_(self, name):
+    def __init__(self, name):
 
         self.name = name
 
-\`\`\`
+```
 
 For:
 
-\`\`\` python
+```python
 
 s1 = Student("Alok")
 
-\`\`\`
+```
 
-\`self\` refers to \`s1\`.
+`self` refers to `s1`.
 
 For:
 
-\`\`\` python
+```python
 
 s2 = Student("Rahul")
 
-\`\`\`
+```
 
-\`self\` refers to \`s2\`.
+`self` refers to `s2`.
 
-**## 3.6 Instance Variables**
+****## 3.6 Instance Variables****
 
-\`\`\` python
+```python
 
 class Student:
 
-    def \_\_init\_\_(self, name):
+    def __init__(self, name):
 
         self.name = name
 
-\`\`\`
+```
 
-\`\`\` python
+```python
 
 s1 = Student("Alok")
 
@@ -478,17 +478,17 @@ print(s1.name)
 
 print(s2.name)
 
-\`\`\`
+```
 
-Each object has its own \`name\`.
+Each object has its own `name`.
 
-**## 3.7 Instance Methods**
+****## 3.7 Instance Methods****
 
-\`\`\` python
+```python
 
 class Student:
 
-    def \_\_init\_\_(self, name):
+    def __init__(self, name):
 
         self.name = name
 
@@ -496,47 +496,47 @@ class Student:
 
         print(f"My name is {self.name}")
 
-\`\`\`
+```
 
-\`\`\` python
+```python
 
 s = Student("Alok")
 
 s.introduce()
 
-\`\`\`
+```
 
-**# 3.8 Four Pillars of OOP**
+****# 3.8 Four Pillars of OOP****
 
-**## 1. Encapsulation**
+****## 1. Encapsulation****
 
 Keep data and related behavior together and control how data is
 
 accessed.
 
-\`\`\` python
+```python
 
 class BankAccount:
 
-    def \_\_init\_\_(self, balance):
+    def __init__(self, balance):
 
-        self.\_balance = balance
+        self._balance = balance
 
     def deposit(self, amount):
 
-        self.\_balance += amount
+        self._balance += amount
 
-    def get\_balance(self):
+    def get_balance(self):
 
-        return self.\_balance
+        return self._balance
 
-\`\`\`
+```
 
-**## 2. Inheritance**
+****## 2. Inheritance****
 
 Inheritance means a child class can use or add to the properties and methods of a parent class.
 
-\`\`\` python
+```python
 
 class Animal:
 
@@ -544,17 +544,15 @@ class Animal:
 
         print("Animal speaks")
 
-
-
 class Dog(Animal):
 
     def bark(self):
 
         print("Dog barks")
 
-\`\`\`
+```
 
-\`\`\` python
+```python
 
 dog = Dog()
 
@@ -562,13 +560,13 @@ dog.speak()
 
 dog.bark()
 
-\`\`\`
+```
 
-**## 3. Polymorphism**
+****## 3. Polymorphism****
 
 Polymorphism means the same method or interface can work differently depending on the object using it.
 
-\`\`\` python
+```python
 
 class Dog:
 
@@ -576,17 +574,15 @@ class Dog:
 
         print("Woof")
 
-
-
 class Cat:
 
     def speak(self):
 
         print("Meow")
 
-\`\`\`
+```
 
-\`\`\` python
+```python
 
 animals = [Dog(), Cat()]
 
@@ -594,17 +590,15 @@ for animal in animals:
 
     animal.speak()
 
-\`\`\`
+```
 
-**## 4. Abstraction**
+****## 4. Abstraction****
 
 Abstraction means showing only the important part and hiding the internal implementation details.
 
-\`\`\` python
+```python
 
 from abc import ABC, abstractmethod
-
-
 
 class Payment(ABC):
 
@@ -614,9 +608,9 @@ class Payment(ABC):
 
         pass
 
-\`\`\`
+```
 
-\`\`\` python
+```python
 
 class CreditCardPayment(Payment):
 
@@ -624,31 +618,31 @@ class CreditCardPayment(Payment):
 
         print(f"Paid {amount} using credit card")
 
-\`\`\`
+```
 
-**## 3.9 Class Variables**
+****## 3.9 Class Variables****
 
 A class variable is associated with the class and can be shared by
 
 instances.
 
-\`\`\` python
+```python
 
 class Student:
 
     school = "ABC School"
 
-    def \_\_init\_\_(self, name):
+    def __init__(self, name):
 
         self.name = name
 
-\`\`\`
+```
 
-**## 3.10 Class Method**
+****## 3.10 Class Method****
 
-A class method receives \`cls\`.
+A class method receives `cls`.
 
-\`\`\` python
+```python
 
 class Student:
 
@@ -656,25 +650,25 @@ class Student:
 
     @classmethod
 
-    def change\_school(cls, name):
+    def change_school(cls, name):
 
         cls.school = name
 
-\`\`\`
+```
 
 Usage:
 
-\`\`\` python
+```python
 
-Student.change\_school("XYZ School")
+Student.change_school("XYZ School")
 
-\`\`\`
+```
 
-**## 3.11 Static Method**
+****## 3.11 Static Method****
 
-A static method does not automatically receive \`self\` or \`cls\`.
+A static method does not automatically receive `self` or `cls`.
 
-\`\`\` python
+```python
 
 class Calculator:
 
@@ -684,31 +678,31 @@ class Calculator:
 
         return a + b
 
-\`\`\`
+```
 
-\`\`\` python
+```python
 
 Calculator.add(10, 20)
 
-\`\`\`
+```
 
-**## 3.12 Method Types**
+****## 3.12 Method Types****
 
   Method            First Parameter   Purpose
 
-  **----------------- ----------------- ------------------**
+****----------------- ----------------- ------------------****
 
-  Instance method   \`self\`            Object data
+  Instance method   `self`            Object data
 
-  Class method      \`cls\`             Class-level data
+  Class method      `cls`             Class-level data
 
   Static method     None              Utility logic
 
-**------------------------------------------------------------------------**
+****------------------------------------------------------------------------****
 
-**# 4. Decorators**
+****# 4. Decorators****
 
-**## 4.1 What is a Decorator?**
+****## 4.1 What is a Decorator?****
 
 A decorator is a function that adds or modifies the behavior of another
 
@@ -716,25 +710,25 @@ function without changing its original source code.
 
 Basic pattern:
 
-\`\`\` python
+```python
 
 def decorator(func):
 
     def wrapper():
 
-        \# Extra behavior
+        # Extra behavior
 
         func()
 
     return wrapper
 
-\`\`\`
+```
 
-**## 4.2 Simple Decorator**
+****## 4.2 Simple Decorator****
 
-\`\`\` python
+```python
 
-def login\_required(func):
+def login_required(func):
 
     def wrapper():
 
@@ -744,55 +738,55 @@ def login\_required(func):
 
     return wrapper
 
-\`\`\`
+```
 
 Apply it:
 
-\`\`\` python
+```python
 
-@login\_required
+@login_required
 
 def dashboard():
 
     print("Welcome to dashboard")
 
-\`\`\`
+```
 
 Call:
 
-\`\`\` python
+```python
 
 dashboard()
 
-\`\`\`
+```
 
 This is conceptually equivalent to:
 
-\`\`\` python
+```python
 
-dashboard = login\_required(dashboard)
+dashboard = login_required(dashboard)
 
-\`\`\`
+```
 
-**## 4.3 Decorator Flow**
+****## 4.3 Decorator Flow****
 
-\`\`\` text
+```text
 
-@login\_required
+@login_required
 
 def dashboard():
 
     ...
 
-\`\`\`
+```
 
-\`\`\` text
+```text
 
 dashboard
 
    ↓
 
-login\_required(dashboard)
+login_required(dashboard)
 
    ↓
 
@@ -802,31 +796,31 @@ wrapper
 
 dashboard()
 
-\`\`\`
+```
 
-**## 4.4 Decorators with Arguments**
+****## 4.4 Decorators with Arguments****
 
-Use \`\*args\` and \`\*\*kwargs\` when the decorated function can accept
+Use `*args` and `**kwargs` when the decorated function can accept
 
 different arguments.
 
-\`\`\` python
+```python
 
 def logger(func):
 
-    def wrapper(\*args, \*\*kwargs):
+    def wrapper(*args, **kwargs):
 
         print("Function called")
 
-        result = func(\*args, \*\*kwargs)
+        result = func(*args, **kwargs)
 
         return result
 
     return wrapper
 
-\`\`\`
+```
 
-\`\`\` python
+```python
 
 @logger
 
@@ -834,53 +828,51 @@ def add(a, b):
 
     return a + b
 
-\`\`\`
+```
 
-**## 4.5 \`functools.wraps\`**
+****## 4.5 `functools.wraps`****
 
-Use \`wraps()\` to preserve function metadata.
+Use `wraps()` to preserve function metadata.
 
-\`\`\` python
+```python
 
 from functools import wraps
-
-
 
 def logger(func):
 
     @wraps(func)
 
-    def wrapper(\*args, \*\*kwargs):
+    def wrapper(*args, **kwargs):
 
         print("Function called")
 
-        return func(\*args, \*\*kwargs)
+        return func(*args, **kwargs)
 
     return wrapper
 
-\`\`\`
+```
 
-**## 4.6 Decorators with Their Own Arguments**
+****## 4.6 Decorators with Their Own Arguments****
 
-\`\`\` python
+```python
 
 def repeat(times):
 
     def decorator(func):
 
-        def wrapper(\*args, \*\*kwargs):
+        def wrapper(*args, **kwargs):
 
-            for \_ in range(times):
+            for _ in range(times):
 
-                func(\*args, \*\*kwargs)
+                func(*args, **kwargs)
 
         return wrapper
 
     return decorator
 
-\`\`\`
+```
 
-\`\`\` python
+```python
 
 @repeat(3)
 
@@ -888,31 +880,31 @@ def hello():
 
     print("Hello")
 
-\`\`\`
+```
 
-**## 4.7 Common Uses**
+****## 4.7 Common Uses****
 
-\-   Logging
+-   Logging
 
-\-   Authentication
+-   Authentication
 
-\-   Authorization
+-   Authorization
 
-\-   Caching
+-   Caching
 
-\-   Timing
+-   Timing
 
-\-   Validation
+-   Validation
 
-\-   Retry logic
+-   Retry logic
 
-\-   Access control
+-   Access control
 
-\-   Framework features
+-   Framework features
 
 Built-in examples:
 
-\`\`\` python
+```python
 
 @property
 
@@ -920,31 +912,31 @@ Built-in examples:
 
 @staticmethod
 
-\`\`\`
+```
 
-**------------------------------------------------------------------------**
+****------------------------------------------------------------------------****
 
-**# 5. virtualenv**
+****# 5. virtualenv****
 
-**## 5.1 What is a Virtual Environment?**
+****## 5.1 What is a Virtual Environment?****
 
-A virtual environment creates an **\*\*isolated Python environment\*\*** for a
+A virtual environment creates an ****isolated Python environment**** for a
 
 project.
 
 Without isolation:
 
-\`\`\` text
+```text
 
 Project A → package version 1
 
 Project B → package version 2
 
-\`\`\`
+```
 
 With virtual environments:
 
-\`\`\` text
+```text
 
 Project A
 
@@ -958,93 +950,93 @@ Project B
 
     └── different packages
 
-\`\`\`
+```
 
-**## 5.2 Why Use It?**
+****## 5.2 Why Use It?****
 
-\-   Isolate project dependencies
+-   Isolate project dependencies
 
-\-   Avoid package conflicts
+-   Avoid package conflicts
 
-\-   Keep projects reproducible
+-   Keep projects reproducible
 
-\-   Avoid unnecessary global installations
+-   Avoid unnecessary global installations
 
-\-   Simplify deployment
+-   Simplify deployment
 
-**## 5.3 Create a Virtual Environment**
+****## 5.3 Create a Virtual Environment****
 
-Modern Python includes \`venv\`:
+Modern Python includes `venv`:
 
-\`\`\` bash
+```bash
 
 python3 -m venv .venv
 
-\`\`\`
+```
 
-**## 5.4 Activate on Linux/macOS**
+****## 5.4 Activate on Linux/macOS****
 
-\`\`\` bash
+```bash
 
 source .venv/bin/activate
 
-\`\`\`
+```
 
 You will usually see:
 
-\`\`\` text
+```text
 
 (.venv)
 
-\`\`\`
+```
 
-**## 5.5 Windows CMD**
+****## 5.5 Windows CMD****
 
-\`\`\` cmd
+```cmd
 
 .venv\Scripts\activate
 
-\`\`\`
+```
 
-**## 5.6 Windows PowerShell**
+****## 5.6 Windows PowerShell****
 
-\`\`\` powershell
+```powershell
 
 .venv\Scripts\Activate.ps1
 
-\`\`\`
+```
 
-**## 5.7 Deactivate**
+****## 5.7 Deactivate****
 
-\`\`\` bash
+```bash
 
 deactivate
 
-\`\`\`
+```
 
-**## 5.8 Delete**
+****## 5.8 Delete****
 
 Linux/macOS:
 
-\`\`\` bash
+```bash
 
 rm -rf .venv
 
-\`\`\`
+```
 
 Windows:
 
-\`\`\` cmd
+```cmd
 
 rmdir /s /q .venv
 
-\`\`\`
+```
 
-**## 5.9 Recommended Structure**
+****## 5.9 Recommended Structure****
 
-\`\`\` text
+```text
 
-my\_project/
+my_project/
 
 ├── .venv/
 
@@ -1056,129 +1048,129 @@ my\_project/
 
 └── README.md
 
-\`\`\`
+```
 
-Add this to \`.gitignore\`:
+Add this to `.gitignore`:
 
-\`\`\` gitignore
+```gitignore
 
 .venv/
 
-\`\`\`
+```
 
-**------------------------------------------------------------------------**
+****------------------------------------------------------------------------****
 
-**# 6. pip Package Manager**
+****# 6. pip Package Manager****
 
-**## 6.1 What is pip?**
+****## 6.1 What is pip?****
 
-\`pip\` is Python's standard package installer.
+`pip` is Python's standard package installer.
 
 It is used to:
 
-\-   Install packages
+-   Install packages
 
-\-   Upgrade packages
+-   Upgrade packages
 
-\-   Remove packages
+-   Remove packages
 
-\-   List installed packages
+-   List installed packages
 
-\-   Inspect package information
+-   Inspect package information
 
-\-   Install dependency files
+-   Install dependency files
 
-**## 6.2 Check pip**
+****## 6.2 Check pip****
 
-\`\`\` bash
+```bash
 
 python3 -m pip --version
 
-\`\`\`
+```
 
-Using \`python -m pip\` is often preferable because it associates pip with
+Using `python -m pip` is often preferable because it associates pip with
 
 a specific Python interpreter.
 
-**## 6.3 Install**
+****## 6.3 Install****
 
-\`\`\` bash
+```bash
 
 python -m pip install requests
 
-\`\`\`
+```
 
-**## 6.4 Specific Version**
+****## 6.4 Specific Version****
 
-\`\`\` bash
+```bash
 
 python -m pip install requests==2.32.4
 
-\`\`\`
+```
 
-**## 6.5 Upgrade**
+****## 6.5 Upgrade****
 
-\`\`\` bash
+```bash
 
 python -m pip install --upgrade requests
 
-\`\`\`
+```
 
-**## 6.6 Uninstall**
+****## 6.6 Uninstall****
 
-\`\`\` bash
+```bash
 
 python -m pip uninstall requests
 
-\`\`\`
+```
 
-**## 6.7 List**
+****## 6.7 List****
 
-\`\`\` bash
+```bash
 
 python -m pip list
 
-\`\`\`
+```
 
-**## 6.8 Show Package Information**
+****## 6.8 Show Package Information****
 
-\`\`\` bash
+```bash
 
 python -m pip show requests
 
-\`\`\`
+```
 
-**## 6.9 Generate \`requirements.txt\`**
+****## 6.9 Generate `requirements.txt`****
 
-\`\`\` bash
+```bash
 
 python -m pip freeze > requirements.txt
 
-\`\`\`
+```
 
-**## 6.10 Install Dependencies**
+****## 6.10 Install Dependencies****
 
-\`\`\` bash
+```bash
 
 python -m pip install -r requirements.txt
 
-\`\`\`
+```
 
-**## 6.11 Upgrade pip**
+****## 6.11 Upgrade pip****
 
-\`\`\` bash
+```bash
 
 python -m pip install --upgrade pip
 
-\`\`\`
+```
 
-**## 6.12 Typical Setup**
+****## 6.12 Typical Setup****
 
-\`\`\` bash
+```bash
 
-mkdir my\_project
+mkdir my_project
 
-cd my\_project
+cd my_project
 
 python3 -m venv .venv
 
@@ -1188,11 +1180,11 @@ python -m pip install requests
 
 python -m pip freeze > requirements.txt
 
-\`\`\`
+```
 
-**## 6.13 Workflow**
+****## 6.13 Workflow****
 
-\`\`\` text
+```text
 
 Create project
 
@@ -1220,49 +1212,49 @@ Freeze dependencies
 
 requirements.txt
 
-\`\`\`
+```
 
-**------------------------------------------------------------------------**
+****------------------------------------------------------------------------****
 
-**# 7. PEP 8 Standards Summary**
+****# 7. PEP 8 Standards Summary****
 
-**## 7.1 What is PEP 8?**
+****## 7.1 What is PEP 8?****
 
-**\*\*PEP 8\*\*** is Python's style guide.
+****PEP 8**** is Python's style guide.
 
-PEP means **\*\*Python Enhancement Proposal\*\***.
+PEP means ****Python Enhancement Proposal****.
 
 PEP 8 provides conventions that make Python code:
 
-\-   Readable
+-   Readable
 
-\-   Consistent
+-   Consistent
 
-\-   Maintainable
+-   Maintainable
 
-\-   Easier to review
+-   Easier to review
 
 PEP 8 is primarily a style guide, not a set of requirements enforced by
 
 the Python interpreter.
 
-**## 7.2 Indentation**
+****## 7.2 Indentation****
 
-Use **\*\*4 spaces\*\***.
+Use ****4 spaces****.
 
-\`\`\` python
+```python
 
 if age >= 18:
 
     print("Adult")
 
-\`\`\`
+```
 
 Avoid mixing tabs and spaces.
 
-**## 7.3 Line Length**
+****## 7.3 Line Length****
 
-Traditional PEP 8 guidance recommends approximately **\*\*79 characters\*\***
+Traditional PEP 8 guidance recommends approximately ****79 characters****
 
 for code and documentation, although modern projects may define their
 
@@ -1270,21 +1262,21 @@ own formatter/linter limits.
 
 Break long expressions when needed:
 
-\`\`\` python
+```python
 
-result = some\_function(
+result = some_function(
 
-    first\_argument,
+    first_argument,
 
-    second\_argument,
+    second_argument,
 
-    third\_argument,
+    third_argument,
 
 )
 
-\`\`\`
+```
 
-**## 7.4 Blank Lines**
+****## 7.4 Blank Lines****
 
 Top-level functions and classes are conventionally separated by two
 
@@ -1292,11 +1284,11 @@ blank lines.
 
 Methods inside a class are separated by one blank line.
 
-\`\`\` python
+```python
 
 class Student:
 
-    def \_\_init\_\_(self, name):
+    def __init__(self, name):
 
         self.name = name
 
@@ -1304,67 +1296,65 @@ class Student:
 
         print(self.name)
 
-\`\`\`
+```
 
-**## 7.5 Naming Conventions**
+****## 7.5 Naming Conventions****
 
-**### Variables and Functions**
+****### Variables and Functions****
 
-Use \`snake\_case\`:
+Use `snake_case`:
 
-\`\`\` python
+```python
 
-student\_name = "Alok"
+student_name = "Alok"
 
-total\_marks = 450
+total_marks = 450
 
-
-
-def calculate\_total():
+def calculate_total():
 
     pass
 
-\`\`\`
+```
 
-**### Classes**
+****### Classes****
 
-Use \`CapWords\` / PascalCase:
+Use `CapWords` / PascalCase:
 
-\`\`\` python
+```python
 
 class BankAccount:
 
     pass
 
-\`\`\`
+```
 
-**### Constants**
+****### Constants****
 
 Use uppercase:
 
-\`\`\` python
+```python
 
-MAX\_RETRIES = 3
+MAX_RETRIES = 3
 
-DEFAULT\_TIMEOUT = 30
+DEFAULT_TIMEOUT = 30
 
-\`\`\`
+```
 
-**### Internal/Non-Public Convention**
+****### Internal/Non-Public Convention****
 
 A leading underscore often communicates internal/non-public intent:
 
-\`\`\` python
+```python
 
-\_internal\_value = 10
+_internal_value = 10
 
-\`\`\`
+```
 
-**## 7.6 Imports**
+****## 7.6 Imports****
 
 Put imports near the top:
 
-\`\`\` python
+```python
 
 import os
 
@@ -1372,179 +1362,179 @@ import sys
 
 from pathlib import Path
 
-\`\`\`
+```
 
 A common organization is:
 
-\`\`\` python
+```python
 
-\# Standard library
+# Standard library
 
 import os
 
 from pathlib import Path
 
-\# Third-party
+# Third-party
 
 import requests
 
-\# Local application
+# Local application
 
 from myapp.models import User
 
-\`\`\`
+```
 
-**## 7.7 Operators**
+****## 7.7 Operators****
 
 Good:
 
-\`\`\` python
+```python
 
 x = 10
 
 total = price + tax
 
-\`\`\`
+```
 
 Avoid:
 
-\`\`\` python
+```python
 
 x=10
 
 total=price+tax
 
-\`\`\`
+```
 
-**## 7.8 Commas**
+****## 7.8 Commas****
 
 Good:
 
-\`\`\` python
+```python
 
 numbers = [10, 20, 30]
 
-\`\`\`
+```
 
 Avoid:
 
-\`\`\` python
+```python
 
 numbers = [10,20,30]
 
-\`\`\`
+```
 
-**## 7.9 Function Calls and Indexing**
+****## 7.9 Function Calls and Indexing****
 
 Good:
 
-\`\`\` python
+```python
 
 numbers[0]
 
 func(value)
 
-\`\`\`
+```
 
 Avoid unnecessary spaces:
 
-\`\`\` python
+```python
 
 numbers [0]
 
 func (value)
 
-\`\`\`
+```
 
-**## 7.10 Comments**
+****## 7.10 Comments****
 
-Comments should explain **\*\*why\*\***, not merely repeat the code.
+Comments should explain ****why****, not merely repeat the code.
 
 Weak:
 
-\`\`\` python
+```python
 
-\# Add 1
+# Add 1
 
 count += 1
 
-\`\`\`
+```
 
 Better:
 
-\`\`\` python
+```python
 
-\# Track the number of successfully processed records.
+# Track the number of successfully processed records.
 
 count += 1
 
-\`\`\`
+```
 
-**## 7.11 Docstrings**
+****## 7.11 Docstrings****
 
 Use docstrings to explain functions, classes, and modules when it is useful.
 
-\`\`\` python
+```python
 
-def calculate\_area(length, width):
+def calculate_area(length, width):
 
     """Return the area of a rectangle."""
 
-    return length \* width
+    return length * width
 
-\`\`\`
+```
 
-**## 7.12 Boolean Comparisons**
+****## 7.12 Boolean Comparisons****
 
 Prefer:
 
-\`\`\` python
+```python
 
-if is\_valid:
+if is_valid:
 
     ...
 
-\`\`\`
+```
 
 Instead of:
 
-\`\`\` python
+```python
 
-if is\_valid == True:
+if is_valid == True:
 
     ...
 
-\`\`\`
+```
 
-For \`None\`, use:
+For `None`, use:
 
-\`\`\` python
+```python
 
 if value is None:
 
     ...
 
-\`\`\`
+```
 
-**## 7.13 Mutable Default Arguments**
+****## 7.13 Mutable Default Arguments****
 
 Avoid:
 
-\`\`\` python
+```python
 
-def add\_item(item, items=[]):
+def add_item(item, items=[]):
 
     items.append(item)
 
     return items
 
-\`\`\`
+```
 
 Use:
 
-\`\`\` python
+```python
 
-def add\_item(item, items=None):
+def add_item(item, items=None):
 
     if items is None:
 
@@ -1554,71 +1544,71 @@ def add\_item(item, items=None):
 
     return items
 
-\`\`\`
+```
 
-**## 7.14 Readability Over Cleverness**
+****## 7.14 Readability Over Cleverness****
 
 Readable:
 
-\`\`\` python
+```python
 
-filtered\_data = [item for item in data if item > 10]
+filtered_data = [item for item in data if item > 10]
 
-\`\`\`
+```
 
 For more complex logic, use multiple statements rather than forcing
 
 everything into one expression.
 
-The goal is not simply fewer lines. The goal is \*\*clear, maintainable
+The goal is not simply fewer lines. The goal is **clear, maintainable
 
-code\*\*.
+code**.
 
-**## 7.15 Useful Python Code-Quality Tools**
+****## 7.15 Useful Python Code-Quality Tools****
 
 Common tools include:
 
-\-   \`pycodestyle\` --- style checking
+-   `pycodestyle` --- style checking
 
-\-   \`ruff\` --- fast linting and formatting
+-   `ruff` --- fast linting and formatting
 
-\-   \`black\` --- code formatting
+-   `black` --- code formatting
 
-\-   \`isort\` --- import sorting
+-   `isort` --- import sorting
 
 Example:
 
-\`\`\` bash
+```bash
 
 python -m pip install ruff
 
-\`\`\`
+```
 
 Check:
 
-\`\`\` bash
+```bash
 
 ruff check .
 
-\`\`\`
+```
 
 Format:
 
-\`\`\` bash
+```bash
 
 ruff format .
 
-\`\`\`
+```
 
 Always follow the conventions established by your project/team.
 
-**------------------------------------------------------------------------**
+****------------------------------------------------------------------------****
 
-**# 8. Quick Revision**
+****# 8. Quick Revision****
 
-**## List / Array**
+****## List / Array****
 
-\`\`\` python
+```python
 
 items.append(x)
 
@@ -1642,11 +1632,11 @@ items.reverse()
 
 items.copy()
 
-\`\`\`
+```
 
-**## Strings**
+****## Strings****
 
-\`\`\` python
+```python
 
 text.lower()
 
@@ -1680,11 +1670,11 @@ text.isalpha()
 
 text.isalnum()
 
-\`\`\`
+```
 
-**## OOP**
+****## OOP****
 
-\`\`\` text
+```text
 
 Class
 
@@ -1696,11 +1686,11 @@ Object
 
 Attributes + Methods
 
-\`\`\`
+```
 
 Four pillars:
 
-\`\`\` text
+```text
 
 Encapsulation
 
@@ -1710,13 +1700,13 @@ Polymorphism
 
 Abstraction
 
-\`\`\`
+```
 
 Important:
 
-\`\`\` text
+```text
 
-\_\_init\_\_()
+__init__()
 
 self
 
@@ -1730,27 +1720,27 @@ Class method
 
 Static method
 
-\`\`\`
+```
 
-**## Decorators**
+****## Decorators****
 
-\`\`\` python
+```python
 
 def decorator(func):
 
-    def wrapper(\*args, \*\*kwargs):
+    def wrapper(*args, **kwargs):
 
-        \# Extra behavior
+        # Extra behavior
 
-        return func(\*args, \*\*kwargs)
+        return func(*args, **kwargs)
 
     return wrapper
 
-\`\`\`
+```
 
 Usage:
 
-\`\`\` python
+```python
 
 @decorator
 
@@ -1758,95 +1748,95 @@ def function():
 
     pass
 
-\`\`\`
+```
 
 Equivalent idea:
 
-\`\`\` python
+```python
 
 function = decorator(function)
 
-\`\`\`
+```
 
-**## Virtual Environment**
+****## Virtual Environment****
 
 Create:
 
-\`\`\` bash
+```bash
 
 python3 -m venv .venv
 
-\`\`\`
+```
 
 Activate:
 
-\`\`\` bash
+```bash
 
 source .venv/bin/activate
 
-\`\`\`
+```
 
 Deactivate:
 
-\`\`\` bash
+```bash
 
 deactivate
 
-\`\`\`
+```
 
-**## pip**
+****## pip****
 
 Install:
 
-\`\`\` bash
+```bash
 
-python -m pip install package\_name
+python -m pip install package_name
 
-\`\`\`
+```
 
 Uninstall:
 
-\`\`\` bash
+```bash
 
-python -m pip uninstall package\_name
+python -m pip uninstall package_name
 
-\`\`\`
+```
 
 List:
 
-\`\`\` bash
+```bash
 
 python -m pip list
 
-\`\`\`
+```
 
 Freeze:
 
-\`\`\` bash
+```bash
 
 python -m pip freeze > requirements.txt
 
-\`\`\`
+```
 
 Install dependencies:
 
-\`\`\` bash
+```bash
 
 python -m pip install -r requirements.txt
 
-\`\`\`
+```
 
-**## PEP 8**
+****## PEP 8****
 
-\`\`\` text
+```text
 
 4 spaces indentation
 
-snake\_case → variables/functions
+snake_case → variables/functions
 
 PascalCase → classes
 
-UPPER\_CASE → constants
+UPPER_CASE → constants
 
 Imports → top of file
 
@@ -1862,13 +1852,13 @@ Avoid unnecessary complexity
 
 Use linters/formatters
 
-\`\`\`
+```
 
-**------------------------------------------------------------------------**
+****------------------------------------------------------------------------****
 
-**# Final Mental Model**
+****# Final Mental Model****
 
-\`\`\` text
+```text
 
 Python
 
@@ -1920,10 +1910,10 @@ Python
 
     └── PEP 8
 
-\`\`\`
+```
 
-\> **\*\*Core idea:\*\*** Write Python that is correct first, then make it
+> ****Core idea:**** Write Python that is correct first, then make it
 
-\> readable, maintainable, testable, and consistent with your project's
+> readable, maintainable, testable, and consistent with your project's
 
-\> conventions.
+> conventions.
