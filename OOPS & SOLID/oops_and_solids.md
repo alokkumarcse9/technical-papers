@@ -4,7 +4,7 @@
 
 ---
 
-# 🐍 Part 1: OOPs in Python
+# Part 1: OOPs in Python
 
 ## 1. What is OOP?
 
@@ -270,7 +270,7 @@ print(result)
 
 ---
 
-# 🏛️ 12. Four Pillars of OOP
+# 12. Four Pillars of OOP
 
 ```text
                  OOP
@@ -284,7 +284,7 @@ print(result)
 
 ---
 
-## 12.1 🔒 Encapsulation
+## 12.1 Encapsulation
 
 Encapsulation means keeping data and related methods together and controlling access to internal data.
 
@@ -322,7 +322,7 @@ __name      → Name mangling / strongly non-public convention
 
 ---
 
-## 12.2 🧬 Inheritance
+## 12.2 Inheritance
 
 Inheritance allows a child class to reuse or extend a parent class.
 
@@ -356,7 +356,7 @@ Animal
 
 ---
 
-## 12.3 🔄 Polymorphism
+## 12.3 Polymorphism
 
 Polymorphism means the same interface can produce different behavior depending on the object.
 
@@ -389,7 +389,7 @@ Meow
 
 ---
 
-## 12.4 🎯 Abstraction
+## 12.4 Abstraction
 
 Abstraction means exposing essential behavior while hiding implementation details.
 
@@ -506,7 +506,7 @@ Car
 
 ---
 
-# ⚡ OOP Quick Revision
+# OOP Quick Revision
 
 ```text
 Class
@@ -535,7 +535,7 @@ Abstraction
 
 ---
 
-# 🧱 Part 2: SOLID Principles
+# Part 2: SOLID Principles
 
 ## 1. What is SOLID?
 
@@ -977,7 +977,7 @@ D → Dependency Inversion
 
 ---
 
-# 🎯 OOP vs SOLID
+# OOP vs SOLID
 
 | OOP | SOLID |
 |---|---|
@@ -991,7 +991,7 @@ D → Dependency Inversion
 
 ---
 
-# 🚀 Final Revision Map
+# Final Revision Map
 
 ```text
                     PYTHON OOP
