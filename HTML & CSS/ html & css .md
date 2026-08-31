@@ -960,3 +960,11 @@ This removes default spacing and makes element sizing easier and more predictabl
 > **Positioning places elements in specific locations.**
 
 > **Media queries make the layout responsive.**
+
+
+# References
+
+- https://developer.mozilla.org/en-US/docs/Web/HTML
+- https://developer.mozilla.org/en-US/docs/Web/CSS
+- https://www.w3schools.com/css/
+- https://www.youtube.com/watch?v=6mbwJ2xhgzM&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg
