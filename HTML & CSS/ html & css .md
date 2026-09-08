@@ -1,4 +1,4 @@
-# CSS Technical Paper — Simple English Notes
+# CSS Technical Paper
 
 ---
 
