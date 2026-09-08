@@ -581,7 +581,7 @@ display: none;
 
 ## `px`
 
-### Simple Definition
+### Definition
 
 `px` is used for a fixed size.
 
@@ -593,7 +593,7 @@ width: 200px;
 
 ## `%`
 
-### Simple Definition
+### Definition
 
 `%` is relative to the appropriate parent or containing area.
 
@@ -605,7 +605,7 @@ width: 50%;
 
 ## `vw`
 
-### Simple Definition
+###  Definition
 
 `vw` is relative to the viewport width.
 
@@ -617,7 +617,7 @@ width: 50vw;
 
 ## `vh`
 
-### Simple Definition
+###  Definition
 
 `vh` is relative to the viewport height.
 
@@ -629,7 +629,7 @@ height: 100vh;
 
 ## `rem`
 
-### Simple Definition
+###  Definition
 
 `rem` is relative to the root font size.
 
@@ -641,7 +641,7 @@ font-size: 2rem;
 
 ## `fr`
 
-### Simple Definition
+### Definition
 
 `fr` is mainly used in CSS Grid to divide available space.
 
@@ -655,7 +655,7 @@ grid-template-columns: 1fr 2fr;
 
 ## Margin
 
-### Simple Definition
+### Definition
 
 Margin is the space **outside an element**.
 
@@ -667,7 +667,7 @@ margin: 20px;
 
 ## Padding
 
-### Simple Definition
+### Definition
 
 Padding is the space **inside an element**.
 
@@ -692,7 +692,7 @@ Padding → Inside
 
 # 15. Normal Document Flow
 
-## Simple Definition
+## Definition
 
 By default, HTML elements follow the normal document flow.
 
@@ -744,7 +744,7 @@ position: sticky;
 
 ## `static`
 
-### Simple Definition
+### Definition
 
 This is the default position.
 
@@ -760,7 +760,7 @@ position: static;
 
 ## `relative`
 
-### Simple Definition
+### Definition
 
 The element stays in the normal flow but can be moved from its original position.
 
@@ -776,7 +776,7 @@ position: relative;
 
 ## `absolute`
 
-### Simple Definition
+### Definition
 
 The element is removed from the normal flow and placed relative to a positioned parent.
 
@@ -792,7 +792,7 @@ position: absolute;
 
 ## `fixed`
 
-### Simple Definition
+### Definition
 
 The element is positioned relative to the screen and stays there while scrolling.
 
@@ -808,7 +808,7 @@ position: fixed;
 
 ## `sticky`
 
-### Simple Definition
+### Definition
 
 The element behaves normally at first and then sticks when a scroll position is reached.
 
@@ -833,13 +833,13 @@ display: flex;
 
 ## `justify-content`
 
-### Simple Definition
+### Definition
 
 `justify-content` aligns items along the **main axis**.
 
 ## `align-items`
 
-### Simple Definition
+### Definition
 
 `align-items` aligns items along the **cross axis**.
 
@@ -873,7 +873,7 @@ Recommended:
 }
 ```
 
-## Simple Definition
+## Definition
 
 `box-sizing: border-box` makes width and height calculations easier.
 
@@ -905,7 +905,7 @@ The total width remains:
 
 # 19. `margin: 0 auto`
 
-## Simple Definition
+## Definition
 
 `margin: 0 auto` is commonly used to center a block or container horizontally.
 
